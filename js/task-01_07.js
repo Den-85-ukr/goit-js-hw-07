@@ -11,13 +11,15 @@
 // Категория: Животные
 // Количество элементов: 4
 
-const menuItemsByCategory = document.querySelectorAll("li.item");
-console.log(`В списке ${menuItemsByCategory.length} категории.`);
+const allItemsRef = [...document.querySelectorAll('li.item')];
+console.log(`В списке ${allItemsRef.length} категории.`);
 
-// const menuItemsByTitle = document.querySelectorAll("ul > li.h2");
-// //console.log(menuItemsByTitle);
-
-// const allElementsInCategory = document.querySelectorAll("li.item");
-// // console.log(
-// //   `Категория: ${menuItemsByTitle} \n Количество элементов: ${allElementsInCategory.length}`
-// // );
+allItemsRef.map(item => {
+  const allTitleRef = item.querySelector('h2');
+  //console.log(title);
+  const allLiRef = item.querySelectorAll('ul li');
+  //console.log(list.length);
+  return console.log(
+    `Категория: ${allTitleRef.textContent}\r\nКоличество элементов: ${allLiRef.length}`,
+  );
+});
