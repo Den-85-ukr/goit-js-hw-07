@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
 </head>
 <body>
+    <!-- Task 1 -->
     <ul id="categories">
         <li class="item">
             <h2>Животные</h2>
@@ -38,6 +40,39 @@
             </ul>
         </li>
     </ul>
+    <!-- Task 2 -->
+    <ul id="ingredients">  
+
+    </ul>
+    <!-- Task 3 -->
+    <ul id="gallery">
+
+    </ul>
+    <!-- Task 4 -->
+    <div id="counter">
+        <button type="button" data-action="decrement">-1</button>
+        <span id="value">0</span>
+        <button type="button" data-action="increment">+1</button> 
+        <br />
+    </div>
+    <!-- Task 5 -->
+    <input type="text" placeholder="Ваше имя?" id="name-input" />
+    <h1>Привет, <span id="name-output">незнакомец</span>!</h1>
+    <!-- Task 6 -->
+    <input type="text" id="validation-input" data-length="6" placeholder="Введи 6 символов" /> 
+    <br />
+    <!-- Task 7 -->
+    <input id="font-size-control" type="range" />
+    <br />
+    <span id="text">Абракадабра!</span>
+    <!-- Task 8 -->
+    <div id="controls">
+        <input type="number" min="0" max="100" step="1" />
+        <button type="button" data-action="render">Создать</button>
+        <button type="button" data-action="destroy">Очистить</button>
+    </div>
+    
+    <div id="boxes"></div>
     <!-- Scripts -->
     <script src="./js/task-01_07.js" type="module"></script>
     <script src="./js/task-02_07.js" type="module"></script>
@@ -46,6 +81,6 @@
     <script src="./js/task-05_07.js" type="module"></script>
     <script src="./js/task-06_07.js" type="module"></script>
     <script src="./js/task-07_07.js" type="module"></script>
-    <script src="./js/task-01_08.js" type="module"></script>
+    <!-- <script src="./js/task-08_07.js" type="module"></script> -->
 </body>
 </html>
