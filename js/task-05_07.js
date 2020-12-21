@@ -6,8 +6,9 @@ const inputRef = document.querySelector('#name-input');
 const outputRef = document.querySelector('#name-output');
 
 inputRef.addEventListener('input', event => {
-    if (inputRef.value.length === 0) {
-      return (outputRef.textContent = 'незнакомец');
-    }
-    return (outputRef.textContent = event.target.value);  
+  if (inputRef.value.length === 0) {
+    outputRef.textContent = 'незнакомец';
+  } else {
+    outputRef.textContent = event.target.value
+  };  
 });

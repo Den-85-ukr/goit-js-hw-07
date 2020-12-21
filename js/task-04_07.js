@@ -15,12 +15,12 @@ let counterValue = 0;
 
 function increment() {
    counterValue += 1
-   return (valueRef.textContent = counterValue);
+   valueRef.textContent = counterValue;
 }
 
 function decrement() {
     counterValue -= 1;
-    return (valueRef.textContent = counterValue);
+    valueRef.textContent = counterValue;
 }
 
 btnDecrementRef.addEventListener('click', decrement);

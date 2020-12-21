@@ -14,12 +14,12 @@
 const allItemsRef = [...document.querySelectorAll('li.item')];
 console.log(`В списке ${allItemsRef.length} категории.`);
 
-allItemsRef.map(item => {
+allItemsRef.forEach(item => {
   const allTitleRef = item.querySelector('h2');
   //console.log(title);
   const allLiRef = item.querySelectorAll('ul li');
   //console.log(list.length);
-  return console.log(
+  console.log(
     `Категория: ${allTitleRef.textContent}\r\nКоличество элементов: ${allLiRef.length}`,
   );
 });

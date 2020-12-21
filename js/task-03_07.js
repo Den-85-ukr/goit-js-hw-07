@@ -26,14 +26,16 @@ const images = [
   },
 ];
 
+// for (let img of images) {
+//   ulRef.insertAdjacentHTML(
+//     'afterbegin',
+//     `<li><img src="${img.url}" alt="${img.alt}"></li>`,
+//   );
+// }
+
 const ulRef = document.querySelector('#gallery');
+const liRef = images.map(({ ...img }) => {
+  return `<li> <img alt = '${img.alt}' src = '${img.url}' > </li>`;
+});
 
-for (let img of images) {
-  ulRef.insertAdjacentHTML(
-    'afterbegin',
-    `<li><img src="${img.url}" alt="${img.alt}"></li>`,
-  );
-}
-
-
-
+ulRef.insertAdjacentHTML('afterbegin', liRef.join(' '));
