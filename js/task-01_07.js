@@ -12,6 +12,7 @@
 // Количество элементов: 4
 
 const allItemsRef = document.querySelectorAll('li.item');
+
 console.log(`В списке ${allItemsRef.length} категории.`);
 
 allItemsRef.forEach(item => {
